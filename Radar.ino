@@ -1,9 +1,9 @@
 #include <Servo.h> 
 
-// Defines Tirg and Echo pins of the Ultrasonic Sensor
+// Defines Trig and Echo pins of the Ultrasonic Sensor
 const int trigPin = 10;
 const int echoPin = 11;
-
+const int servoPin = 12;
 // Variables for the duration and the distance
 long duration;
 int distance;
@@ -11,25 +11,23 @@ int distance;
 Servo myServo; // Creates a servo object for controlling the servo motor
 
 void setup() {
+  Serial.begin(9600);
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT); // Sets the echoPin as an Input
-  Serial.begin(9600);
-  myServo.attach(12); // Defines on which pin is the servo motor attached
+  myServo.attach(servoPin); // Defines on which pin is the servo motor attached
 }
 void loop() {
-  // rotates the servo motor from 15 to 165 degrees
-  for(int i=15;i<=165;i++){
+  for(int i=15;i<=165;i++){ // rotates the servo motor from 15 to 165 degrees
     myServo.write(i);
     delay(30);
     distance = calculateDistance(); // Calls a function for calculating the distance measured by the Ultrasonic sensor for each degree
     Serial.print(i);Serial.print(",");Serial.println(distance);
   }
-  // Repeats the previous lines from 165 to 15 degrees
-  for(int i=165;i>15;i--){  
+  for(int i=165;i>15;i--){  // Repeats the previous lines from 165 to 15 degrees
     myServo.write(i);
     delay(30);
     distance = calculateDistance();
-  Serial.print(i);Serial.print(",");Serial.println(distance);
+    Serial.print(i);Serial.print(",");Serial.println(distance);
   }
 }
 // Function for calculating the distance measured by the Ultrasonic sensor
