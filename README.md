@@ -1,8 +1,8 @@
 # Project Radar
 ## Daftar Isi
-- [Daftar Isi](##DaftarIsi)
-- [Kode Arduino](##KodeArduino)
-- [Kode Processing](##KodeArduino)
+- [Cara Kerja](https://github.com/FillahAlamsyah/Project-Radar?tab=readme-ov-file#cara-kerja)
+- [Kode Arduino](https://github.com/FillahAlamsyah/Project-Radar?tab=readme-ov-file#kode-arduino-)
+- [Kode Processing](https://github.com/FillahAlamsyah/Project-Radar?tab=readme-ov-file#kode-processing)
 
 ## Cara Kerja
 
@@ -19,7 +19,7 @@ flowchart TD
 ![image](https://github.com/FillahAlamsyah/Project-Radar/assets/87614211/0623da71-5fb9-424f-a885-b06d3a46b89f)
 * Output 
 
-## Kode Arduino <a name="KodeArduino"></a>
+## Kode Arduino
 ```c++
 #include <Servo.h> 
 
