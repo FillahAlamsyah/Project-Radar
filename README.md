@@ -19,6 +19,8 @@ flowchart TD
 ![image](https://github.com/FillahAlamsyah/Project-Radar/assets/87614211/0623da71-5fb9-424f-a885-b06d3a46b89f)
 * Output 
 
+Test di P5JS Web Live Editor https://editor.p5js.org/fillahall/sketches/RXj1kirjl
+
 ## Kode Arduino
 ```c++
 #include <Servo.h> 
