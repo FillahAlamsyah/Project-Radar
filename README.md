@@ -1,4 +1,6 @@
-# Project Radar
+# Project Pemetaan 2D Berbasis Arduino Uno dengan Sensor HCSR-04
+> Project ini bertujuan untuk melakukan pemetaan 2D menggunakan Arduino Uno sebagai mikrokontroller dengan sensor HCSR-04 yang akan mendeteksi objek lalu dipetakan ke dalam LCD I2C 128x64.
+
 ## Daftar Isi
 - [Cara Kerja](https://github.com/FillahAlamsyah/Project-Radar?tab=readme-ov-file#cara-kerja)
 - [Kode Arduino](https://github.com/FillahAlamsyah/Project-Radar?tab=readme-ov-file#kode-arduino-)
@@ -258,5 +260,9 @@ void drawText() { // draws the texts on the screen
 ```
 
 ![image](https://github.com/FillahAlamsyah/Project-Radar/assets/87614211/9815bdbf-979a-4003-ba10-8f3544136ec4)
+
+
+## Referensi
+
 
 
