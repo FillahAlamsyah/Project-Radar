@@ -4,6 +4,7 @@
 >  Project ini bertujuan untuk melakukan pemetaan 2D menggunakan Arduino Uno sebagai mikrokontroller dengan sensor HCSR-04 yang akan mendeteksi objek lalu dipetakan ke dalam LCD I2C 128x64.
 
 ## Daftar Isi
+
 <details>
 <summary> Buka </summary>
     
@@ -16,6 +17,7 @@
 </details>
 
 ## Diargam Rangkaian
+
 <details>
 <summary> Buka </summary>
 
@@ -30,12 +32,11 @@
 <summary> Buka </summary>
     
 ```mermaid
-flowchart TD
-    A[Sensor HCSR] -->|Jarak| C(Arduino)
-    B[Servo] -->|Sudut| C(Arduino)
-    C -->|Print Serial| D(Processing)
-    D(Processing) -->|Plot Radar| E(Canvas Window)
-    
+flowchart TD;
+    A[Sensor HCSR] -->|Jarak| C(Arduino);
+    B[Servo] -->|Sudut| C(Arduino);
+    C -->|Print Serial| D(Processing);
+    D(Processing) -->|Plot Radar| E(Canvas Window);
 ```
 
 
