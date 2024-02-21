@@ -21,7 +21,9 @@
 [Simulasi Rangkaian di wokwi.com](https://wokwi.com/projects/376864616405893121)
 
 </details>
+
 ## Cara Kerja
+
 <details>
 <summary> Buka </summary>
     
@@ -41,7 +43,9 @@ flowchart TD
 Test di P5JS Web Live Editor https://editor.p5js.org/fillahall/sketches/RXj1kirjl
 
 </details>
+
 ## Kode Arduino
+
 <details>
 <summary> Buka </summary>
     
