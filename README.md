@@ -1,5 +1,7 @@
 # Project Pemetaan 2D Berbasis Arduino Uno dengan Sensor HCSR-04
-> Project ini bertujuan untuk melakukan pemetaan 2D menggunakan Arduino Uno sebagai mikrokontroller dengan sensor HCSR-04 yang akan mendeteksi objek lalu dipetakan ke dalam LCD I2C 128x64.
+
+> [!NOTE]  
+>  Project ini bertujuan untuk melakukan pemetaan 2D menggunakan Arduino Uno sebagai mikrokontroller dengan sensor HCSR-04 yang akan mendeteksi objek lalu dipetakan ke dalam LCD I2C 128x64.
 
 ## Daftar Isi
 <details>
