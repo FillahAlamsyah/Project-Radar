@@ -2,12 +2,29 @@
 > Project ini bertujuan untuk melakukan pemetaan 2D menggunakan Arduino Uno sebagai mikrokontroller dengan sensor HCSR-04 yang akan mendeteksi objek lalu dipetakan ke dalam LCD I2C 128x64.
 
 ## Daftar Isi
-- [Cara Kerja](https://github.com/FillahAlamsyah/Project-Radar?tab=readme-ov-file#cara-kerja)
-- [Kode Arduino](https://github.com/FillahAlamsyah/Project-Radar?tab=readme-ov-file#kode-arduino-)
-- [Kode Processing](https://github.com/FillahAlamsyah/Project-Radar?tab=readme-ov-file#kode-processing)
+<details>
+<summary> Buka </summary>
+    
+- [Diargam Rangkaian](https://github.com/FillahAlamsyah/Project-Radar/blob/main/README.md#cDiargam-Rangkaian)
+- [Cara Kerja](https://github.com/FillahAlamsyah/Project-Radar/blob/main/README.md#cara-kerja)
+- [Kode Arduino](https://github.com/FillahAlamsyah/Project-Radar/blob/main/README.md#kode-arduino)
+- [Kode Processing](https://github.com/FillahAlamsyah/Project-Radar/blob/main/README.md#kode-processing)
+- [Referensi](https://github.com/FillahAlamsyah/Project-Radar/blob/main/README.md#Referensi)
 
+</details>
+
+## Diargam Rangkaian
+<details>
+<summary> Buka </summary>
+
+![Circuit-Diagram.png](https://github.com/FillahAlamsyah/Project-Radar/blob/main/Circuit-Diagram.png)
+[Simulasi Rangkaian di wokwi.com](https://wokwi.com/projects/376864616405893121)
+
+</details>
 ## Cara Kerja
-
+<details>
+<summary> Buka </summary>
+    
 ```mermaid
 flowchart TD
     A[Sensor HCSR] -->|Jarak| C(Arduino)
@@ -23,7 +40,11 @@ flowchart TD
 
 Test di P5JS Web Live Editor https://editor.p5js.org/fillahall/sketches/RXj1kirjl
 
+</details>
 ## Kode Arduino
+<details>
+<summary> Buka </summary>
+    
 ```c++
 #include <Servo.h> 
 
@@ -69,8 +90,12 @@ int calculateDistance(){
   return distance;
 }
 ```
+</details>
 
 ## Kode Processing
+<details>
+<summary> Buka </summary>
+    
 ### Header
 ```java
 import processing.serial.*; // imports library for serial communication
@@ -261,8 +286,20 @@ void drawText() { // draws the texts on the screen
 
 ![image](https://github.com/FillahAlamsyah/Project-Radar/assets/87614211/9815bdbf-979a-4003-ba10-8f3544136ec4)
 
+</details>
 
 ## Referensi
+### HCSR-04
+- https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/
 
+### Servo
+- https://lastminuteengineers.com/servo-motor-arduino-tutorial/
 
+### I2C LCD
+- https://lastminuteengineers.com/i2c-lcd-arduino-tutorial/
+
+### OLED I2C Display Arduino
+- https://startingelectronics.org/tutorials/arduino/modules/OLED-128x64-I2C-display/
+- https://learn.adafruit.com/adafruit-gfx-graphics-library
+- https://lastminuteengineers.com/oled-display-arduino-tutorial/
 
